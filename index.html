@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome app</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script defer src="https://kit.fontawesome.com/8d12b8be90.js" 
+    crossorigin="anonymous"></script>
+</head>
+<body style="width:100%; overflow-x:hidden;  overflow-y:hidden;">
+    <span id="todoListBack" class="hidden">
+        <form id="todo-form">
+            <input 
+            required
+            maxlength="50"
+            type="text" 
+            placeholder="해야할일을 적어주세요"
+            />
+        </form>
+        <ul id="todo-list">
+            <li class="todoListFontSize" style="margin-bottom: 4.5em;"></li>
+        </ul>
+        <ul id="finish-list" class="hidden">
+            <li class="todoListFontSize" style="margin-bottom: 4.5em;"></li>
+        </ul>
+    </span>
+    <a href="#" id="todoListButton">
+        <i class="fas fa-bars"></i>
+        <span></span>
+    </a>
+    <div id="clock"></div>
+    <form class="hidden" id="login-form">
+        <input 
+            required
+            maxlength="15"
+            type="text" 
+            placeholder="이름이 무언인가요?"
+        />
+    </form>
+    <div id="backgroundName"></div>
+        <div class="hidden" id="greeting"></div>
+    <div id="quote">
+        <div></div>
+        <div></div>
+    </div>
+    <div id="weatherBtn">
+        <i class="fas fa-cloud"></i>
+    </div>
+    <div id="weather" class="hidden">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <script src="JS/toggle.js"></script>
+    <script src="JS/greeting.js"></script>
+    <script src="JS/clock.js"></script>
+    <script src="JS/Quotes.js"></script>
+    <script src="JS/background.js"></script>
+    <script src="JS/todo.js"></script>
+    <script src="JS/weather.js"></script>
+    <script src="JS/waiting.js"></script>
+</body>
+</html>
